@@ -1,9 +1,9 @@
 import time
 import requests
+import os
 
-TELEGRAM_TOKEN = "8721644450:AAEgdYFT5PWqZcunNEzNjXscXxuLn1HySNo"
-TG_URL = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/"
-
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+TG_URL = f"https://api.telegram.org/bot{TOKEN}/"
 user_state = {}
 
 
